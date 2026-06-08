@@ -21,6 +21,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'org.postgresql:postgresql'
@@ -31,6 +32,24 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+//    //MapStruct
+//    // Source: https://mvnrepository.com/artifact/org.mapstruct/mapstruct
+//    implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.6.3'
+//    // Source: https://mvnrepository.com/artifact/org.mapstruct/mapstruct-processor
+//    implementation group: 'org.mapstruct', name: 'mapstruct-processor', version: '1.6.3'
+//    // Source: https://mvnrepository.com/artifact/org.projectlombok/lombok-mapstruct-binding
+//    implementation group: 'org.projectlombok', name: 'lombok-mapstruct-binding', version: '0.2.0'
+
+
+    // bos cher chhaya
+    // MapStruct and Lombok
+    compileOnly 'org.mapstruct:mapstruct:1.6.3'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok-mapstruct-binding:0.2.0'
+
 }
 
 tasks.named('test') {

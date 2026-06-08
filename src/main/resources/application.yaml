@@ -1,3 +1,9 @@
+#services:
+#  backend:
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 1G
 spring:
   jpa:
     hibernate:
@@ -16,5 +22,6 @@ spring:
 
 server:
   port: 9999
+
 
 
