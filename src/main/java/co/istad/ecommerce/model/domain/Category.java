@@ -29,6 +29,9 @@ public class Category {
     @OneToMany(mappedBy = "category")
     private List<Product> products;
 
+    @OneToMany(mappedBy = "parentCategory", cascade = CascadeType.REMOVE)
+    private List<Category> categories;
+
     @ManyToOne
     private Category parentCategory;
 }

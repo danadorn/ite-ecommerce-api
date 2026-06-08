@@ -2,6 +2,7 @@ package co.istad.ecommerce.mapper;
 
 import co.istad.ecommerce.dto.CategoryResponse;
 import co.istad.ecommerce.dto.CreateCategoryRequest;
+import co.istad.ecommerce.dto.UpdateCategoryRequest;
 import co.istad.ecommerce.model.domain.Category;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -12,4 +13,8 @@ public interface CategoryMapper {
 
 //    @Mapping(source = "parentCategory.id", target = "parentId")
     CategoryResponse mapCategoryToCategoryResponse(Category category);
+
+    CategoryResponse mapCategoryUpdateToCategoryResponse(UpdateCategoryRequest updateCategoryRequest);
+
+//    void mapUpdateCategoryFromRequestToUpdateCategoryResponse(Integer id, UpdateCategoryRequest updateCategoryRequest);
 }
