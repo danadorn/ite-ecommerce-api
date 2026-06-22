@@ -10,9 +10,7 @@ import co.istad.ecommerce.model.repository.CategoryRepository;
 import co.istad.ecommerce.model.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -126,8 +124,6 @@ public class CategoryServiceImpl implements CategoryService {
         }
 //        categoryMapper.mapCategoryUpdateToCategoryResponse( updateCategoryRequest);
         return categoryMapper.mapCategoryToCategoryResponse(categoryRepository.save(category));    }
-
-
 
 
 }

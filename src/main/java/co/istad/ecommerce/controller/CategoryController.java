@@ -1,8 +1,10 @@
 package co.istad.ecommerce.controller;
 
+import co.istad.ecommerce.auditing.BookRepository;
 import co.istad.ecommerce.dto.CategoryResponse;
 import co.istad.ecommerce.dto.CreateCategoryRequest;
 import co.istad.ecommerce.dto.UpdateCategoryRequest;
+import co.istad.ecommerce.model.repository.CategoryRepository;
 import co.istad.ecommerce.model.service.CategoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -16,6 +18,9 @@ import org.springframework.web.bind.annotation.*;
 public class CategoryController {
 
     private final CategoryService categoryService;
+    private final CategoryRepository categoryRepository;
+    private final BookRepository bookRepository;
+
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public CategoryResponse createNewCategory(@Valid @RequestBody CreateCategoryRequest createCategoryRequest){
@@ -59,6 +64,13 @@ public class CategoryController {
             @PathVariable Integer id,
             @RequestBody UpdateCategoryRequest request) {
         return categoryService.updateCategoryById(id, request);
+    }
+
+    @GetMapping("/test")
+    public String getTest
+            (){
+        bookRepository.updateBook(1, "yooo", "1234");
+        return "test";
     }
 
 }
