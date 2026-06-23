@@ -1,9 +1,9 @@
-package co.istad.ecommerce.model.service;
+package co.istad.ecommerce.feature.Category;
 
 
-import co.istad.ecommerce.dto.CategoryResponse;
-import co.istad.ecommerce.dto.CreateCategoryRequest;
-import co.istad.ecommerce.dto.UpdateCategoryRequest;
+import co.istad.ecommerce.feature.Category.dto.CategoryResponse;
+import co.istad.ecommerce.feature.Category.dto.CreateCategoryRequest;
+import co.istad.ecommerce.feature.Category.dto.UpdateCategoryRequest;
 import org.springframework.data.domain.Page;
 
 public interface CategoryService {

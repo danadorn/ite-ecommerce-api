@@ -1,21 +1,15 @@
-package co.istad.ecommerce.model.service.impl;
+package co.istad.ecommerce.feature.Category;
 
 
-import co.istad.ecommerce.dto.CategoryResponse;
-import co.istad.ecommerce.dto.CreateCategoryRequest;
-import co.istad.ecommerce.dto.UpdateCategoryRequest;
-import co.istad.ecommerce.mapper.CategoryMapper;
-import co.istad.ecommerce.model.domain.Category;
-import co.istad.ecommerce.model.repository.CategoryRepository;
-import co.istad.ecommerce.model.service.CategoryService;
+import co.istad.ecommerce.feature.Category.dto.CategoryResponse;
+import co.istad.ecommerce.feature.Category.dto.CreateCategoryRequest;
+import co.istad.ecommerce.feature.Category.dto.UpdateCategoryRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.List;
 
 
 @Service

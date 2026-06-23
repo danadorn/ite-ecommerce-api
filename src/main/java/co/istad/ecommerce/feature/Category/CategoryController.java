@@ -1,11 +1,9 @@
-package co.istad.ecommerce.controller;
+package co.istad.ecommerce.feature.Category;
 
 import co.istad.ecommerce.auditing.BookRepository;
-import co.istad.ecommerce.dto.CategoryResponse;
-import co.istad.ecommerce.dto.CreateCategoryRequest;
-import co.istad.ecommerce.dto.UpdateCategoryRequest;
-import co.istad.ecommerce.model.repository.CategoryRepository;
-import co.istad.ecommerce.model.service.CategoryService;
+import co.istad.ecommerce.feature.Category.dto.CategoryResponse;
+import co.istad.ecommerce.feature.Category.dto.CreateCategoryRequest;
+import co.istad.ecommerce.feature.Category.dto.UpdateCategoryRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

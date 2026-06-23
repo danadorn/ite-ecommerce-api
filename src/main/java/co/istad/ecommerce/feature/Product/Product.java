@@ -1,6 +1,7 @@
-package co.istad.ecommerce.model.domain;
+package co.istad.ecommerce.feature.Product;
 
-import jakarta.annotation.Nullable;
+import co.istad.ecommerce.feature.Category.Category;
+import co.istad.ecommerce.feature.Order.OrderLine;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

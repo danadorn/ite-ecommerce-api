@@ -1,6 +1,5 @@
-package co.istad.ecommerce.model.repository;
+package co.istad.ecommerce.feature.Order;
 
-import co.istad.ecommerce.model.domain.OrderLine;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

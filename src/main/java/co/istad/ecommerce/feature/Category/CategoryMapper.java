@@ -1,11 +1,9 @@
-package co.istad.ecommerce.mapper;
+package co.istad.ecommerce.feature.Category;
 
-import co.istad.ecommerce.dto.CategoryResponse;
-import co.istad.ecommerce.dto.CreateCategoryRequest;
-import co.istad.ecommerce.dto.UpdateCategoryRequest;
-import co.istad.ecommerce.model.domain.Category;
+import co.istad.ecommerce.feature.Category.dto.CategoryResponse;
+import co.istad.ecommerce.feature.Category.dto.CreateCategoryRequest;
+import co.istad.ecommerce.feature.Category.dto.UpdateCategoryRequest;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {

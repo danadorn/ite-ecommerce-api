@@ -1,7 +1,8 @@
-package co.istad.ecommerce.model.domain;
+package co.istad.ecommerce.feature.Category;
 
 
 import co.istad.ecommerce.auditing.BaseEntity;
+import co.istad.ecommerce.feature.Product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

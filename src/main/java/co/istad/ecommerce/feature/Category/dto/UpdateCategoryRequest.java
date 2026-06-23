@@ -1,10 +1,10 @@
-package co.istad.ecommerce.dto;
+package co.istad.ecommerce.feature.Category.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 
-public record CreateCategoryRequest(
+public record UpdateCategoryRequest (
 
         @NotBlank(message = "Name is required")
         @Size(max = 50)
@@ -14,5 +14,5 @@ public record CreateCategoryRequest(
         String icon,
         @Positive
         Integer parentCategoryId
-) {
+){
 }

@@ -1,4 +1,4 @@
-package co.istad.ecommerce.dto;
+package co.istad.ecommerce.feature.Category.dto;
 
 import lombok.Builder;
 
