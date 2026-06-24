@@ -4,6 +4,10 @@
 #      resources:
 #        limits:
 #          memory: 1G
+file:
+  client-path: /file
+  storage-location: /home/dorndana/Pictures/random/upload/
+  base-uri: http://localhost:${file.client-path}
 spring:
   jpa:
     hibernate:

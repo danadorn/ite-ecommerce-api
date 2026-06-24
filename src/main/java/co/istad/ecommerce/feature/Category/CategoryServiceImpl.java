@@ -19,9 +19,6 @@ public class CategoryServiceImpl implements CategoryService {
     private final CategoryRepository categoryRepository;
     private final CategoryMapper categoryMapper;
 
-
-
-
     @Override
     public CategoryResponse createNewCategory(CreateCategoryRequest createCategoryRequest) {
 
