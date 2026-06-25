@@ -1,6 +1,7 @@
 package co.istad.ecommerce.feature.file;
 
 import co.istad.ecommerce.feature.file.dto.FileUploadResponse;
+import org.springframework.data.domain.Page;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -13,4 +14,9 @@ public interface FileUploadService {
     List<FileUploadResponse> uploadMultiple(List<MultipartFile> files);
 
     void deleteByName(String name);
+
+    Page<FileUploadResponse> findAll(int pageNumber, int pageSize);
+
+    FileUploadResponse findByName(String name);
+
 }

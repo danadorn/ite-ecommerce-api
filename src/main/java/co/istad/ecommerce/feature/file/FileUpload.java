@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Entity
 @Table(name = "files")
@@ -21,6 +20,8 @@ public class FileUpload {
     @Column(nullable = false, unique = true)
     private String name;
     private String caption;
+
+    private String extension;
 
     private Long size;
     private String mediaType;

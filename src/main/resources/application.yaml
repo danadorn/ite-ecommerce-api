@@ -7,7 +7,7 @@
 file:
   client-path: /file
   storage-location: /home/dorndana/Pictures/random/upload/
-  base-uri: http://localhost:${file.client-path}
+  base-uri: http://localhost:9999${file.client-path}
 spring:
   jpa:
     hibernate:
@@ -23,6 +23,10 @@ spring:
     password: ${PASSWORD}
   application:
     name: ite-ecommerce
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 20MB
 
 server:
   port: 9999
