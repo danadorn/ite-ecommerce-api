@@ -17,12 +17,12 @@ public class ProductController {
 
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping
-    public ProductResponse createNew(CreateProductRequest createProductRequest) {
+    @PostMapping()
+    public ProductResponse createNew(@RequestBody CreateProductRequest createProductRequest) {
         return productService.createNew(createProductRequest);
     }
 
-    @GetMapping
+    @GetMapping()
     public Page<ProductResponse> finaAll(
             @RequestParam(required = false, defaultValue = "0") int pageNumber,
             @RequestParam(required = false, defaultValue = "25") int pageSize

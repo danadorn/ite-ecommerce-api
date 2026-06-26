@@ -23,15 +23,17 @@ public class Order {
     private String customerId;
     @Column(nullable = false)
     private String address;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Float discount;
     @Column(nullable = false)
     private String remark;
     @Column(nullable = false)
-    private String status;
+    private Boolean status;
     private LocalDateTime orderedAt;
+    @Column(nullable = false)
+    private Boolean isDeleted;
 
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST) // save from order repo to order_line repo
     private List<OrderLine> orderLines;
 }

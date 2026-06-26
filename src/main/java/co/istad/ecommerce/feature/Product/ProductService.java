@@ -4,7 +4,7 @@ import co.istad.ecommerce.feature.Product.dto.CreateProductRequest;
 import co.istad.ecommerce.feature.Product.dto.ProductResponse;
 import org.springframework.data.domain.Page;
 
-public abstract class ProductService {
+public interface ProductService {
 
     /**
      * Create a new product
@@ -12,7 +12,7 @@ public abstract class ProductService {
      * @param createProductRequest - is requesting data for creating product
      */
 
-    public abstract ProductResponse createNew(CreateProductRequest createProductRequest);
+    ProductResponse createNew(CreateProductRequest createProductRequest);
 
-    public abstract Page<ProductResponse> findAll(int pageNumber, int pageSize);
+    Page<ProductResponse> findAll(int pageNumber, int pageSize);
 }

@@ -4,7 +4,7 @@ import jakarta.validation.constraints.*;
 
 import java.math.BigDecimal;
 
-public record CreateProductRequest(
+public record   CreateProductRequest(
         @NotBlank(message = "Name is required")
         @Size(max = 255)
         String name,
